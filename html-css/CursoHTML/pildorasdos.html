@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos selectores</title>
+    <style>
+        p[name^="mis"]{ /*Selector name. Permite name^ - Atributo name que empiece por... $ - Aquellos que terminen en... * - Aquellos que se encuentre en algún punto ...*/
+            color: red;
+        }
+        p[name$="os"]{
+            background-color: aqua;
+        }
+        p[name*="es"]{
+            color: green;
+        }
+        p:nth-child(even){
+            color: blueviolet;
+        }
+        #principal{
+            width: 500px;
+            /*background-color: chocolate;*/
+            text-align: center;
+            margin: 15px auto; /*15 por arriba y por abajo y automático por los lados*/
+            padding: 15px; /*Padding por los 4 lados*/
+            border: 3px solid red;
+            border-radius: 15px 20px;
+            box-shadow: red 20px 20px 15px;
+            background: -moz-linear-gradient(top, #00f 10%, #3ff 90%);
+            background: -webkit-linear-gradient(top, #00f, #3ff);
+            background: -ms-linear-gradient(top, #00f, #3ff);
+            background: -o-linear-gradient(top, #00f, #3ff);
+            /*outline: 2px dashed #00f;
+            outline-offset: 15px;
+            transform: scale(0.5, -1);
+            transform: rotate(30deg);
+            transform:skew(30deg);*/
+            transition:transform 1s ease 0.5s;
+           
+        }
+        #principal:hover{ /*Cuando se posicione el cursor del ratón sobre él*/
+            transform:rotate(10deg);
+            
+        }
+        @font-face { /*Insertamos el tipo de letra - Enn la raiz del servidor...OJO*/
+            font-family: 'MiPropiaFuente';
+            src: url('B-TEAM.otf');
+        }
+        #titulo{
+            font: bold 36px 'MiPropiaFuente';
+            text-shadow: blue 3px 3px 10px;
+            color: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header id="principal">
+<span id="titulo">Estilos CSS3</span>
+    </header>
+    <p name="miselementos">Hola</p>
+    <p name="miselementos">Adiós</p>
+    <p name="misestiles">Febrero</p>
+    <p>Marzo</p>
+    <p>Abril</p>
+</body>
+</html>

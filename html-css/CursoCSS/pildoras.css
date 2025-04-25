@@ -1,0 +1,35 @@
+#cabeceraweb{
+    background-color: #00F;
+}
+
+#navegacionprincipal{
+    background-color: #f00;
+}
+
+#barralateral{
+    background-color: blueviolet;
+    float: left;
+    height: 1000px;
+}
+
+#contenidoprincipal{
+    background-color: #606;
+    margin-left: 200px; /*Separación respecto a la página*/
+    padding-left: 15px; /*Separación de los elementos internos respecto del borde de la caja*/
+    padding-top: 15px;
+}
+
+#pieprincipal{
+    background-color: #FF0;
+    clear: both;
+    margin-top: 15px;
+}
+
+li{
+    background-color: #FF0;
+    display: inline; /*Pasamos un elemento block a inline*/
+}
+
+img{
+    width: 380px;
+}
