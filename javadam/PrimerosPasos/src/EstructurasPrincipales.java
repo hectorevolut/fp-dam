@@ -11,7 +11,7 @@ public class EstructurasPrincipales {
 		 *	float - 4 bytes. (sufijo F). 6 o 7 cifras decimales.
 		 *	double - 8 bytes. 15 cifras decimales.
 		 *Tipo Caracter. ' '.
-		 *	char - Espaio en memoria no significativo. ' '.
+		 *	char - Espacio en memoria no significativo. ' '.
 		 *Tipo boolean
 		 *	2 únicos valores - true / false.
 		 *
@@ -23,12 +23,15 @@ public class EstructurasPrincipales {
 		 *		Java es fuertemente tipado - No se permiten operaciones entre tipos diferentes.
 		 *			Para poder operar habrá que hacer conversiones explícitas.
 		 *		Java no permite utilizar variables no inicializadas.
+		 *		Java es case sensitive (influyen mayúsculas y minúsculas).
 		 *
 		 *Inferencia de tipos: var variable = valor; 
 		 *	Deducir automáticamente el tipo de una variable.
 		 *	El compilador analiza el valor y le asigna el tipo más adecuado.
 		 *	Utiliza los tipos comodines (int, double).
 		 *	La variable no podrá cambiar su tipo durante la ejecución del programa.
+		 *	Es obligatorio declarar e inicializar en la misma línea.
+		 *		El compilador tiene que saber al tipo para realizar la inferencia.
 		 *	Se puede usar en:
 		 *		- Variables locales dentro de métodos.
 		 *		- En bucles for-each for.
@@ -38,6 +41,17 @@ public class EstructurasPrincipales {
 		 *		- Variables de clase o atributos de instancia.
 		 *		- Tipos genéricos.
 		 * */
+		
+		//Estructuras principales III - Vídeo 6
+		byte edad; //Creo la variable
+		edad = 17; //Inicializo la variable
+		byte mes = 1; //Declaro e inicializo en la misma línea.
+		System.out.println(edad); //Imprimo por pantalla la variable
+		System.out.println(mes);
+		
+		var bolsas = 15; //Inferencia de tipo declarando por obligación en la misma línea.
+		bolsas = 35; //Cambio el valor de la variable.
+		System.out.println(bolsas);
 
 	}
 
