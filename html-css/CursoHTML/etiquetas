@@ -1,0 +1,105 @@
+Nuevas etiquetas Html
+<mark>Marcar un texto, sin importancia ni énfasis - Relleno amarillo - Dependiendo de la acciónn del usuario</mark>
+<em>Para indicar énfasis - Sustituye a <i>Texto en cursiva</i></em>
+<strong>Marcar texto importante - Importante para el buscador- Sustituye a <b>Texto en negrita</b></strong>
+<small>Presentar textos legales - copyright, etc.</small>
+<cite>Títulos de libros, canciones, trabajos propios, citas...Se pone en cursiva</cite>
+<address>Para informaciónn de contacto. Debe ir dentro del footer - Enn cursiva</address>
+<time datetime="año/mes/día" pubdate>Representa fechas y horas</time>
+<span>Aplica estilos a palabras o grupos de palabras - no agrega nada hasta que se aplica CSS</span>
+
+Los navegadores dan un CSS por defecto. Difiere entre navagadores.
+
+DÓNDE COLOCAR CÓDIGO CSS
+    1.- Archivo independiente con extensión CSS.
+    2.- Dentro de la etiquetas de head.
+        Solo válido para ese página.
+        <style></style>
+    3.- Estilo inline. Casos muy concretos
+
+MODELO CAJA - CONTENEDOR
+Dos tipos de etiquetas en HTML.
+    Etiquetas block:
+        - La mayoría de las etiquetas de estructura son block.
+        - Generan salto de página por arriba y por debajo.
+        - Ocupan el 100% del ancho del documento.
+    Etiquetas inline:
+        - No generan un salto de línea.
+        - Ocupan el espacio necesario para contenerlas.
+
+SELECTOR DE ETIQUETA
+    Modifica la etiqueta seleccionada.
+    etiqueta{}
+SELECTOR DE TIPO ID
+    Modifica las etiquetas con el mismo id.
+    #id{}
+    Se suele utilizar mucho con las etiquetas div.
+SELECTORES DE CLASE
+    .class{}
+
+FLOAT, MARGING Y PADDING
+Convertir block en inline
+    display: inline;
+FLOAT: Rompe el flujo de cómo se colocan los elementos en una página.
+    El resto de elementos se sitúan rodeando a ese elemento.
+    Ocupa lo que ocupa el texto.
+        Se modifica con height: medida;
+    Lo orientas a derecha o izquierda.
+    float: left;
+    float: right;
+MARGING
+    Separación exteiror respecto de la página
+PADDING
+    Separación de los elementos interiores respecto del borde de la caja.
+
+NUEVOS SELECTORES
+    Name:
+        etiqueta[name=""]{}
+        name^="" - Que empiecen por.
+        name$="" - Que terminen en.
+        neme*="" - Que contenga.
+
+PSEUDOCLASES
+    etiqueta:nth-child(número){} - Aplica el estilo al hijo número n...en todos.
+        odd: Para los impares.
+        even: Para los pares.
+    etiqueta:first-child{} - Primer hijo.
+    etiqueta:last-child{} - Último hijo.
+    etiqueta:only-child{} - Los que son hijos únicos.
+
+NUEVAS REGLAS
+    border-radius: medida; - Redondea las esquinas de unn borde. Sigue la regla de las 4 medidas...
+    font: tipo tamaño letra;
+    box-shadow: color desplazamiento_horizontal desplazamiento_vertical difuminación; - Sombra de la caja.
+    
+    text-shadow: color desplazamiento_horizontal desplazamiento_vertical difuminación; - Sombra del texto.
+    Letras especiales:
+        1. Insertar la letra:
+        @font-face{
+            font-family:'MiPropiaFuente';
+            src:url('Dirección de la letra');
+        }
+        2. Cuando cargo font: 
+            font: tipo tamaño 'MiPropiaFuente';
+    Degradados en los fondos:
+        background: -navegador(moz, webkit, ms, o)- tipo_de_degradado (dirección, color %, color %);
+            -o-linear-gradient.
+            Con 50% y 50% se ven los dos colores de degradar...En cuanto modifico a otro valor distinto de 50% se hace,
+        Degradado circular:
+            -radial-gradient (center, ellipse, color, color) (center, circle, color, color).
+        Transparencia al texto:
+            rgba(0-255, 0-255, 0-255, 0-1) - 0 transparente total - 1 opaco.
+                color: rgba(x, x, x, x);
+    Borde exterior a elemento contenedor.
+        outline: tamaño tipo color;
+        outline-offset: medida; - Separamos el borde.
+        transform:scale(0-1-más de uno, númer -1 invierte); - Escala el elemento - Menos de uno, reduce - Más de uno, amplía.
+        transform:rotate(xdeg); - Gira la caja ese número de grados.
+        transform:skew(xdeg); - Cambiamos la perspectiva.
+        transition:transform tiempo tipo_transición retardo;
+    selector:hover{
+        Propiedades que se aplican al pasar el cursor del ratón sobre el elemento.
+    }
+
+
+        
