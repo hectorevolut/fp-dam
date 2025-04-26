@@ -1,0 +1,77 @@
+*{ /* Anulamos los bordes de la página del navegador*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flexdirectionrow{
+    display: flex;
+    flex-direction: row; /*Por defecto*/
+    width: 100%;
+    padding: 1%;
+    background-color: #c0c0c0;
+    border: 1px solid black;
+}
+
+.flexdirectioncolumn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+    background-color: #c0c0c0;
+    border: 1px solid black;
+}
+
+.flexdirectionrowreverse{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 1%;
+    background-color: #c0c0c0;
+    border: 1px solid black;
+}
+
+.flexdirectioncolumnreverse{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 1%;
+    background-color: #c0c0c0;
+    border: 1px solid black;
+}
+
+.flexwrapnowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 1%;
+    background-color: #c0c0c0;
+    border: 1px solid black;
+}
+
+.flexwrapwrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1%;
+    background-color: #c0c0c0;
+    border: 1px solid black;
+}
+
+.flexwrapwrapreverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    padding: 1%;
+    background-color: #c0c0c0;
+    border: 1px solid black;
+}
+
+.elementos{
+    width: 10%;
+    margin: 1%;
+    padding: 1%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
