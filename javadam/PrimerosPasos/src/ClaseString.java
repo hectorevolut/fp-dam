@@ -17,6 +17,7 @@ public class ClaseString {
 		 * 		String("Mundo") y deja de apuntar al objeto String("Hola"), apunta al objeto String("Mundo").
 		 * 		El objeto String("Hola") se queda huérfano sin nada que apunte a él - El garbagge collector o recolector
 		 * 		de basura elimina cuando cree conveniente los elemenntos en memoria que están sin referenciar (no inmediato)
+		 * 		Si volvemos a indicar saludo="Hola" reutiliza el mismo objeto, salvo que declares saludo = new String("Hola")
 		 * */
 		
 		String nombre = "Héctor";
