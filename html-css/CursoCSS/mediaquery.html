@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediaquery - Querys o condiciones para cargar estilos</title>
+    <!--Diseñamos varias maquetaciones para la misma página-->
+    <!--Desde el fichero html o dentro del CSS aplicamos las condiciones-->
+    <!--Pero tenemos que enlazarlo a los CSS necesarios y distintos-->
+    <!--link rel="stylesheet" href="pc.css" media="screen and (min-width: 1200px)">-->
+    <!--link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px) and (max-width: 1199px)">-->
+    <!--link rel="stylesheet" href="movil.css" media="screen and (min-width: 1px) and (max-width:599px)">-->
+    <link rel="stylesheet" href="miestilo.css"><!--Al no tener atributo media se carga sí o sí y el resto se carga si se cumplen las mediaqueries-->
+    <link rel="stylesheet" href="mediaquery.css"><!--Con esta opción creamos las versiones en el CSS-->
+    <!--Si las reglas confluyen prima el orden de definición y el que tiene mediaquery-->
+    <!--Aquí prima el !important en miestilo.css-->
+</head>
+<body>
+    <h1>Ejemplo con Mediaquery</h1>
+    <br>
+    <div id="capa1"></div>
+    <div id="capa2"></div>
+</body>
+</html>

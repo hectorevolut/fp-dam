@@ -1,35 +1,22 @@
-#cabeceraweb{
-    background-color: #00F;
-}
+/*Introducción - Vídeo I
+Partes de un estilo - selector(zona a modificar){bloque de declaración(instrucciones de formato a aplicar)}
+Cada navegador trae unas características CSS predeterminandas.*/
 
-#navegacionprincipal{
-    background-color: #f00;
-}
+/*Hojas de estilo internas/externas I - Vídeo 2
+Esto es una hoja de estilo externa::after
+    - Dan formato a todo el sitio web.
+    - Agilizan la descarga.
+    - Van en un archivo vinculado independiente.*/
 
-#barralateral{
-    background-color: blueviolet;
-    float: left;
-    height: 1000px;
-}
+h1{
+    /*propiedad: valor separadas por; La última puede ir sin ;*/
+    text-align: center; /*Alineación de texto*/
+    color: blue /*Color de texto*/
 
-#contenidoprincipal{
-    background-color: #606;
-    margin-left: 200px; /*Separación respecto a la página*/
-    padding-left: 15px; /*Separación de los elementos internos respecto del borde de la caja*/
-    padding-top: 15px;
 }
-
-#pieprincipal{
-    background-color: #FF0;
-    clear: both;
-    margin-top: 15px;
-}
-
-li{
-    background-color: #FF0;
-    display: inline; /*Pasamos un elemento block a inline*/
-}
-
-img{
-    width: 380px;
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Tipo de letra*/
+    color: green;
+    font-size: 18px; /*Tamaño de letra*/
+    text-decoration: underline; /*Subrayados, etc*/
 }

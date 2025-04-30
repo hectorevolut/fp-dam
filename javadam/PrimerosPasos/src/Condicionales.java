@@ -106,6 +106,15 @@ public class Condicionales {
 		default:
 			System.out.println("Mes icorrecto");
 		}
+		/*La instrucción break:
+		 * 	Si no hay break, en el momento que se cumple la condición, sigue co el resto en cascada al no tener 
+		 * 	break. No entra en las primeras que no se cumplen. Pero entra en el resto desde que se cumple.
+		 * 	En default no se necesita break. No tiene que ser un error el no poner break, ya que Java permite
+		 * 	agrupar varios case que hagan lo mismo.
+		 * 		case 6:
+		 * 		case 7:
+		 * 			System.out.println("Fin de semana");
+		 * 			break;*/
 		/*Novedad desde la versión 14:
 		 * Se puede utilizar como una expresión que devuelva un valor que se puede utlizar fuera del switch.
 		 * String resultado=switch(valor a evaluar){
@@ -120,7 +129,7 @@ public class Condicionales {
 		String resultados = switch(dia){
 		case "lunes","martes","miercoles","jueves","viernes"->{
 			System.out.println("El día es...");
-			yield"Laborable";
+			yield"Laborable"; //Si utilizo return, salgo del método además del switch - Conn yield salgo del bucle.
 		}
 		case "sabado","domingo"->{
 			System.out.println("El día es...");

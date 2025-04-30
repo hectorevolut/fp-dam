@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: pink;
+    text-decoration: underline;
+}
+div{
+    background-color: black !important; /*Si pongo el important prevalece sobre los demás*/
+}
