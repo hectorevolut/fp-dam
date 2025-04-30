@@ -19,11 +19,21 @@
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
-		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="200,200"/>
-		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="sortItemState" value="false"/>
 	</section>
 	<section name="GitCommitMessageComponent">
+		<list key="/Users/hector/Desktop/fp-dam/.git">
+			<item value="false"/>
+			<item value="Héctor Calderón Hervás &lt;hector@evolutplatform.com&gt;"/>
+			<item value="# WARNING: head commit changed in the meantime&#x0D;&#x0D;Actualización de los dos ordenadores"/>
+			<item value="Héctor Calderón Hervás &lt;hector@evolutplatform.com&gt;"/>
+			<item value="2752a5efdcc1be78802509ce8742586057f8a775"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="395"/>
