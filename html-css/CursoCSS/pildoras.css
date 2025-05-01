@@ -20,3 +20,67 @@ p{
     font-size: 18px; /*Tamaño de letra*/
     text-decoration: underline; /*Subrayados, etc*/
 }
+/*Selectores CSS:
+    - Selectores de etiqueta. - Sobre todas las etiquetas de ese tipo.
+    - Selectores de clase. - Permite esstablecer formato a un elemennto concreto.
+        .nombre(no debe empezar por número ni símbolos, es case sensitive){
+        }
+        En HTML incluimos atributo class="nombre"
+        Podemos aplicas el atributo calss a los elementos que queramos.
+    - Selectores de ID.
+        Solo unn elemento concreto de una página web.
+        #nombre{
+        }
+        En HTML aplicas el atributo id.
+    - Selectores de grupo.
+        Aplica unn conjunto de estilos a unn conjunto de etiquetas.
+        etiqueta, etiqueta, etiqueta ...{
+        }
+    - Selector universal.
+        Aplica los estilos a toda la página web.
+        *{
+        } 
+        
+    - Selectores descendientes.
+        Aplica los estilos solo a etiquetas que cumplan ciertas condiciones.
+        Tener en cuenta la jearquía de etiquetas.
+        Se pueden combinar con clase e id.
+            Para que una clase o id descienda de otra etiqueta la tenemos que meter en otra etiqueta de agrupación <span>
+            Esto si lo hacemos asi: Ej etiqueta .clase (con espacio entre etiqueta y el punto)
+            Pero si ponemos etiqueta.clase (sin espacio) - Aplicamos a la etiqueta que tenga como atributo la clase.
+        */
+
+.miestilo{
+    color: brown;
+    font-size: 35px;
+    font-style: normal;
+}
+
+#mitabla{
+    background-color: aquamarine; /*Color de fondo*/
+    border-style: double; /*Estilo de borde*/
+    border-color: blue; /*Color de borde*/
+}
+h1, h2, h3{ /*Selector de grupo*/
+    font-size: 35px;
+}
+*{ /*Selector universal*/
+    background-color: beige;
+}
+/*Selector descendiente*/
+li a {
+    color: red; /*Solo aplica a los a que están dentro de li*/
+}
+/*Solo aplica a los strong que están dentro de a y dentro de li.*/
+li a strong{
+    background-color: black;
+}
+strong .destacado{ /*Para que .destacado descienda de strong, le he metido en el HTML
+                    en un <span>*/
+    font-size: 24px;
+    color: blueviolet;
+}
+strong.destacado{ /*Aplico a los strong que tengan como atributo destacado*/
+    font-size: 30px;
+    color: bisque;
+}

@@ -23,13 +23,73 @@
             font-size: 18px; /*Tamaño de letra*/
             text-decoration: underline; /*Subrayados, etc*/
         }
-
+        h2{
+            color: orange;
+        }
+        address{
+            color: rgb(40, 38, 38);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+        }
+        a:link{
+            color: black;
+            
+        }
+        a:visited{
+            color: bisque;
+        }
+        a:hover{
+            color: yellow;
+            text-decoration: none; /*Quito el subrayado*/
+        }
+        a:active{
+            color: red;
+            font-size: 20px;
+        }
+        p:hover {
+            font-size: 30px;
+        }
     </style>
     
 </head>
 <body>
+    <!--Estilos CSS inline - Regla CSS dentro de la etiqueta HTML
+        <etiqueta (atributo)style="propiedad: valor;">
+            Puedes cambiar un únnico elemento de una página HTML.
+            No ahorramos tiempo a la hora de crear páginas web ni ancho de banda como las hojas de estilo internas
+            y sobre todo las externas(al cargas la página queda en la caché).
+            Se usa cuando e necesita aplicar formato a unn único elemento (email, copyright, etc.)-->
     <h1>Mi primera web con CSS</h1>
     <p>Este es mi primer párrafo dentro de mi web</p>
+    <h2>Etiqueta h2 de prueba</h2><!--El ; se usa solo para separar propiedades-->
+    <p style="color: rgb(85, 103, 85); font-size: 24px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt maiores, veniam neque consequatur rerum 
+        aliquid facilis libero itaque voluptate quas! Debitis aliquid modi itaque atque voluptas illum eos magni non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti odit totam molestiae asperiores harum 
+        placeat veniam consequuntur sapiente. Ullam deserunt, laboriosam nihil in nostrum magni porro delectus et dolorum!</p>
+    <h2 style="color: pink; font-family: 'Courier New', Courier, monospace;">Segundo h2 de la página</h2>
     <h1>Héctor Calderón</h1>
+    <address>Copyright 2025</address>
+    <a href="https://google.com">Ir a Google</a>
+    <a href="https://www.evolutplatform.es">Evolut Platform</a>
+    <a href="https://www.cocacola.com">Coca Cola</a><br>
+    <p>kjfnvievn jndci djnc idc uhdbc uwdbc uwdhbc duhcb wduhcbdwchwe cbwuehcbwe ubchewuhb</p>
+    <!--Estados de un vínculo:
+    - link: En reposo - Cuando no estamos haciendo nada sobre él.
+    - visited: Cuando ha sido visitado.
+    - hover: Cuando se pasa el ratón por encima.
+    - active: Cuando se está haciendo click.
+    Con pseudoclase o pseudo elementos le damos unos estilos dependiendo del estado.
+        a:link a:visited a:hover a:active - Es importante aplicarlos en este orden
+    La pseudo clase :hover se puede aplicar a otros elementos-->
+
 </body>
 </html>
+<!--Jerarquía de etiquetas:
+Html - Padre de Head y de Body
+    Head - Hija de Html, padre de Title y hermana de Body.
+        Title - Hija de Head.
+    Body - Hija de Html, padre de H1 y p, hermana de Head.
+        H1 - Hija de Body.
+        p - Hija de body.
+            strong - Hija de p.
+    Etiquetas padre y etiquetas hijo o dependientes y hermanas.-->
