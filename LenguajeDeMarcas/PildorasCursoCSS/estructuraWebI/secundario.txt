@@ -1,0 +1,12 @@
+<h3>Noticias</h3>
+<h4><a href="#">Tecnolog&iacute;a que viene. La anunciamos</a></h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+<h4><a href="#">P&iacute;ldoras inform&aacute;ticas Versi&oacute;n 2.0</a>.</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna ali.</p>
+<h4><a href="#">Restricciones conocidas</a></h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna ali.</p>
+<h3>Alrededor de la web</h3>
+<h4><a href="#">Tipos</a></h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+<h4><a href="#">Clases</a></h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>

@@ -1,0 +1,199 @@
+
+body {
+	font-size: 62.5%;
+	font-family: "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+	margin: 20px;
+}
+
+h1, h2, h3, p, ul {
+	padding: 0;
+	margin: 0;
+}
+
+#contenedor {
+	position: relative; /*Todo lo que está dentro de él se posiciona dentro del mismo*/
+	border: solid 1px black;
+	width: 1300px;
+	margin: auto; /*Con esto hago que se centre*/
+}
+
+#banner {
+	position: relative; /*Todo lo que esté en su interior se posicionará respecto el él.*/
+	background: url(images/anniv_banner.png) no-repeat right top;
+}
+#banner ul {
+	position: absolute; /*Se posiciona dentro de los límites del elemento padre al haberlo posicionado como relativo.*/
+	right: 60px; /*60 px desde el borde derecho del elemento hasta el borde del banner*/
+	bottom: 5px; /*5 px desde el borde inferior del elemento al borde inferior del banner*/
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#banner li {
+	display: inline;
+	margin-left: 10px;
+}
+#banner li a {
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 1.1em "Trebuchet MS";
+}
+.separador {
+	border-right: 1px solid #666;
+	padding-right:10px;
+}
+#banner #logobanner{ /*Posicionamiento respecto e la propia página - Sale del flujo.*/
+	position: absolute;
+	left: -22px;
+	top: -5px;
+	/*Al estar #banner con posicionnamiento relativo, pasa a posicionarse respecto al elemento padre.*/
+}
+#banner #logo{
+	margin: 20px;
+}
+
+#principal{
+	margin-left: 160px; /*Mismo margen que el ancho de las barras laterales.*/
+	margin-right: 160px;
+	padding: 0px 15px 15px 20px;
+	border: 1px solid #666666;
+	border-top: none;
+	border-bottom: none;
+}
+
+#principal .foto{
+	position: relative; /*Todo lo que esté en su interior se posicionará respecto a él.*/
+	float: right;
+	width: 200px;
+	margin-left: 12px;
+	margin-bottom: 2px;
+	width: 168px;
+}
+#principal .foto p{ /*Afecta solo al p que está dentro del elemento con class foto y dentro del elemento con id principal*/
+	position: absolute;
+	background-color: white;
+	border: 1px dashed #666666;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	padding: 5px;
+	width: 168px;
+	left: 10px; /*Distancia izquierda del padre*/
+	bottom: 10px; /*Distancia margen inferior respecto del padre*/
+}
+
+#contenidoPrincipal{
+	position: relative; /*Todo lo que hay en su interior se podrá posicionar respecto a él.*/
+	clear: both;
+}
+
+#princNav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url(images/bg_nav.png) repeat-x left top;
+	float: left;
+	border-bottom: 1px solid #000;
+	width: 100%;
+}
+
+#princNav li {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#princNav li a, #princNav li a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-right: 1px solid #000;
+	display: block;
+	font: bold 1em "Lucida Grande", Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+}
+
+#princNav li a:hover {
+	background: url(images/bg_nav_h.png);
+}
+
+#principal h1 {
+	color: #663900;
+	padding-top: 15px;
+	margin-bottom: 10px;
+	font: bold 2.3em Georgia, "Times New Roman", Times, serif;
+}
+
+#principal h2 {
+	font-size: 1.8em;
+	font-weight: normal;
+	border-bottom: 1px solid #106A9B;
+	margin-bottom: 5px;
+	color: #663900;
+}
+
+#principal p {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+
+#barralateral {
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 125px;
+	background-color: #D9ECFF;
+
+}
+
+#barralateral h2 {
+	font-size: 1.3em;
+	color: #FFFFFF;
+	padding: 7px 8px 0 8px;
+	margin-bottom: 5px;
+	border-top: 3px solid #86B500;
+	background: url(images/bg_side_head.png) repeat-x left bottom;
+}
+#barralateral p {
+	margin-right: 5px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	color: #666666;
+}
+#barralateral h3 {
+	font-size: 1.1em;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #663900;
+	margin-bottom: 3px;
+}
+#barralateral h3 a {
+	color: #663900;
+}
+
+#barralateral a:hover {
+	color: #CA1D07;
+}
+
+
+#advertencias p {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#advertencias{
+	position: absolute;
+	top: 15px;
+	right: 5px;
+	width: 125px;
+
+}
+
+#pie {
+	padding: 5px;
+	border-top: 1px solid #000;
+	background-color: #86B500;
+	font-weight: bold;
+	color: #000000;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia</title>
+    <style type="text/CSS">
+        p{
+            color: orange; /*Propiedad de color a los p y a los que están dentro de él (strong, em). No se lo aplica al 
+                                resto de elementos que no están dentro*/
+            margin-left: 50px;
+            padding-left: 20px;
+            border-left: 4px solid black;
+        }
+        .estilopagina{ /*los p reciben los del body por herencia. Pero se queda con el específico. Se queda con las propiedades que no se repitan.*/
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            color: brown;
+            width: 960px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body class="estilopagina">
+    <header>
+        <h1>El apasionente mundo de CSS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos sed eum temporibus, aut neque iusto! Cum, distinctio amet quod 
+            cumque dolor nobis possimus accusamus rem eius, assumenda velit sapiente placeat?
+        </p>
+    </header>
+    <main>
+        <h2>El gran poder de CSS</h2>
+        <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Voluptates eius modi vel nemo rerum eaque distinctio, excepturi sunt molestias, 
+            earum ut eveniet fugit atque repellendus? <em>Consectetur</em> ipsum itaque perferendis quos.
+        </p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <article>
+            <p><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Laudantium culpa modi quod, soluta eos magnam provident dolor fuga fugit doloremque 
+                corrupti consectetur sint, recusandae tenetur expedita quidem, dignissimos ex. Harum.
+            </p>
+            <p>Lorem ipsum dolor sit amet <em>consectetur adipisicing</em> elit. Corporis quos ex, <strong>voluptate officiis</strong> voluptatem molestiae qui autem omnis hic impedit 
+                nobis deleniti ea sint sit, culpa quaerat nostrum est nesciunt.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Copyright</p>
+    </footer>
+</body>
+</html>

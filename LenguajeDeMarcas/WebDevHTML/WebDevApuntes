@@ -1,0 +1,122 @@
+Elemento = etiqueta de apertura + contenido y elementos anidados + etiqueta de cierre
+La especificación para cada elemento especifica si la etiqueta de cierre es obligatoria
+    "Ninguna etiqueta es omisible" - Se requiere etiqueta de apertura y de cierre".
+    No cerrar <csript>, <style>, <template>, <textarea>, <title> interrumpe el contenido posterior.
+Elementos no reemplazados
+    Tienen etiquetas de apertura y de cierre y pueden incluir texto y otras etiquetas como subelementos.
+Elementos reemplazados
+    Se reemplazan por objetos. Se reemplazna por contenido no textual (imagen, objeto de interfaz gráfica, etc).
+    <input>, <img>
+Elementos vacíos
+    Elementos que se cierran automáticamente y se representan con una etiqueta.
+    No pueden incluir contenido de texto ni elementos anidados.
+    <br>, <col>, <embed>, <hr>, <img>, <input>, <link>, <meta>, <source>, <track>, <wbr>
+
+ATRIBUTOS
+Bits adicionales de pares nombre/valor separados por espacios.
+Proporcionan informaciónn sobre el elemento.
+Solo aparecen en la etiqueta de apertura.
+<etiqueta_apertura atributos separados por espacios>Texto<etiqueta de cierre>
+    <a href="#register" target="_self">Registration</a>
+        #register -Se desplaza hasta el atributo id="register" en la pestaña actual del navegador.
+Definen el comportamiento, las vinculaciones y la funcionalidad e los elementos.
+    Globales - Cualquier elemento
+    Varios elementos pero no a todos
+    Específicos de un elemento
+La mayoría son pares nombre/valor
+    Los booleanos (true/false) el valor no es necesario
+    <img src="switch.svg" alt="light switch" ismap />
+Algunos valores si son case sensitive
+    Cuando se utiliza como parte de un selector de atributo CSS y JavaScript
+Los valores de los atributos que contengan espacio o caracteres especiales deben ir entre comillas.
+
+ELEMENTO, ATRIBUTOS Y JavaScript
+El Document Object Model (DOM) es la representación de datos de la estructura y contenido del documento HTML
+
+AGREGAR A TODOS LOS DOCUMENTOS HTML
+<!DOCTTYPE html>
+    Preámbulo
+    Nodo DOCTTYPE - Indica al navegador que use el modo de estándares.
+<html>
+    Elemento raíz.
+    Elemento superior de <head> y <body>
+    Idioma del contenido
+        Atributo lang="idioma región"
+        <html lang="es">
+<head>
+    Contiene todos los metadatos de un sitio:
+        Título
+        Grupo de caracteres.
+        Configuración del viewport.
+        Descripción.
+        URL base.
+        Vínculos a las hojas de estilo. <link rel="stylesheet" href="archivo.css" type="text/CSS">
+        Versiones alterantivas del sitio.
+            <link rel="alternate" href="https://www.machinelearningworkshop.com/fr/" hreflang="fr-FR" />
+            <link rel="alternate" href="https://www.machinelearningworkshop.com/pt/" hreflang="pt-BR" />
+        Iconos. <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="imagen.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/mlwicon.png" />
+            <link rel="mask-icon" href="/images/mlwicon.svg" color="#226DAA" />
+            Especiales pafa Safari.
+    Obligatorias:
+        Grupo de caracteres. <meta charset="UTF-8">
+        Título. <title>Machine Learning Workshop</title>
+            Se muestra en la pestaña del navegador, lista de ventanas abiertas, historial, resultados de búsqueda, tarjetas redes sociales.
+        Configuración del viewport. <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"> (Sitio responsive)
+
+            Ayuda a mejorar la capacidad de prespuesta del sitio.
+            Permite que el contenido se ejecute correctamente de forma predeterminada sin importar el ancho de la viewport.
+
+INCLUIR CSS
+<link> Recurso externo
+    <link rel="stylesheet" href="archivo.css" type="text/CSS"> type="text/CSS" no es necesario.
+    Almacena en caché.
+<style> En el head de la página
+    Incluir <style></style> en el head.
+Atributo style Como atributo de la etiqueta.
+
+ENCABEZADOS Y SECCIONES
+<header></header>
+    Encabezado principal.
+    Si es de nivel superior - role banner - rol de punto de referencia.
+    Anidado en <main>, <article> o <section> - Encabezado de esa sección - No es punto de referencia.
+<nav></nav>
+    Contenido como nnavegación.
+    Anidado en el encbezado del sitio - Elemento de navegación principla.
+    Anidado en <article> o <section> - Navegación innterna solo para esa sección.
+<footer></footer>
+    Pie de página del sitio.
+    Si es de nivel superior - role contentinfo - rol de punto de referencia.
+    Subordinado a <article>, <aside>, <main>, <nav>, <section> - no es punto de referencia.
+    Suele incluir <adress> - dirección de contacto
+Diseño Santo Grial
+    Un encabezado, dos barras laterales y un pie de página.
+    <body>
+        <header>Header</header>
+        <nav>Nav</nav>
+        <main>
+            <article>First post</article>
+            <article>Second post</article>
+        </main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </body>
+<main></main>
+    Identifica el contenido principal del documento.
+    Uno por página.
+<aside></aside>
+    Contenido relacionado de manera indirecta o tangencial con el principal.
+    Punto de referencia con la función complementary.
+<article></article>
+    Sección de contenido completa o independiente que, en principio, se puede reutilizar de forma independiente.
+<section></section>
+    Abarcar secciones independientes genéricas de un documento cuando no hay un elemento semántico más específico para usar.
+    Deben tener un encabezado.
+<h1>--<h6>
+    Anidado en el banner es el encabezado del sitio.
+    Anidado en main es el encabezado de esa página.
+    Anidado en rticle o sectios es el encabezado de esa subsección.
+
+ATRIBUTOS
+
+
