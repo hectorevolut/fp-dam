@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Bucles {
+public class BuclesWhile {
 
 	public static void main(String[] args) {
 		
@@ -14,8 +14,7 @@ public class Bucles {
 		  while(condición){ //Se repiten siempre que la condición sea verdad.
 		  	Líneas de código a repetir
 		  }
-		  
-		  
+		  Puede darse que nunca se ejecute el código.
 		 * */
 		
 		String clave = "Lunes";
@@ -24,7 +23,7 @@ public class Bucles {
 			pass=JOptionPane.showInputDialog("Introduce constraseña: ");
 			if(clave.equals(pass)==false) System.out.println("Contraseña incorrecta");
 		}
-		System.out.println("Acceso corercto");
+		System.out.println("Acceso correcto");
 	
 
 	}
